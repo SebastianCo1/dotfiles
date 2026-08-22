@@ -94,9 +94,10 @@
     "context": "vim_mode == normal || vim_mode == visual",
     "bindings": {
       "s": "vim::PushSneak", // s:向后跳转,输入两个字符,光标直接跳到该组合处 按 ; 继续查找下一个匹配的 按 , 查找上一个
-      "g s": "vim::PushSneakBackward" // gs:向前(向上)跳转,输入两个字符反向查找 按 ; 继续查找下一个匹配的 按 , 查找上一个
+      "g s": "vim::PushSneakBackward", // gs:向前(向上)跳转,输入两个字符反向查找 按 ; 继续查找下一个匹配的 按 , 查找上一个
       // "c l c": "editor::ConvertToLowerCamelCase", // (未启用)转小驼峰 lowerCamelCase
       // "c u c": "editor::ConvertToUpperCamelCase" // (未启用)转大驼峰 UpperCamelCase
+      "ctrl-q": "vim::ToggleVisualBlock" // Ctrl+Q:进入块可视模式(替代被占用的 Ctrl+V)
     }
   },
   // ── 可视模式下用 X 做 exchange(vim-exchange 风格)────────
