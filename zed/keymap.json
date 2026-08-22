@@ -60,6 +60,20 @@
       "cmd-k cmd-i": "editor::Hover" // 显示类型或变量描述弹窗
     }
   },
+  {
+    "context": "(vim_mode == normal || vim_mode == visual) && !menu",
+    "bindings": {
+      "shift-h": [
+        "workspace::SendKeystrokes",
+        "^"
+      ], // 普通模式:跳到行首非空字符;可视模式:选区扩展到行首非空字符
+      "shift-l": [
+        "workspace::SendKeystrokes",
+        "$"
+      ], // 普通模式:跳到行尾;可视模式:选区扩展到行尾
+      "cmd-k cmd-i": "editor::Hover"
+    }
+  },
   // ── 空窗格 / 共享屏幕时的映射(当前为空)─────────────────
   {
     "context": "EmptyPane || SharedScreen",
