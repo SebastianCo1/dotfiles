@@ -142,7 +142,7 @@
     "context": "(VimControl && !menu)",
     "bindings": {
       "' .": "pane::GoBack", // 先按 ' 再按 . :回到上一个光标位置(跳转历史后退)
-      "shift-' .": "pane::GoForward" // 先按 "(Shift+')再按 . :跳转历史前进
+      "' ' .": "pane::GoForward" // 先按 "(Shift+')再按 . :跳转历史前进
     }
   },
   // ── 终端面板 ────────────────────────────────────────────
