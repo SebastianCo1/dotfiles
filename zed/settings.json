@@ -11,6 +11,7 @@
       "program": "/opt/homebrew/bin/fish" // 内置终端使用 fish shell
     }
   },
+  //todo 高亮
   "semantic_tokens": "combined",
   "project_panel": {
     "dock": "left" // 项目文件树 停靠在左侧
