@@ -10,8 +10,8 @@
   {
     "context": "Workspace", // 整个工作区(不限编辑器)都生效
     "bindings": {
-      "ctrl-s": "workspace::Save" // Ctrl+S:保存当前文件
-      // "shift shift": "file_finder::Toggle" // (未启用)快速连按两次 Shift:打开文件查找器
+      "ctrl-s": "workspace::Save", // Ctrl+S:保存当前文件
+      "shift shift": "file_finder::Toggle" // (未启用)快速连按两次 Shift:打开文件查找器
     }
   },
   // ── 插入模式下用 jk 退回普通模式 ──────────────────────────
