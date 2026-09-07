@@ -1,0 +1,6 @@
+# 忽略 Fish 本地生成的临时通用变量
+fish_variables
+*/fish_variables
+
+# 忽略 macOS 系统的垃圾文件
+.DS_Store
