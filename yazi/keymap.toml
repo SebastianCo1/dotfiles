@@ -1,0 +1,4 @@
+[[mgr.prepend_keymap]]
+on   = [ "g", "z" ]
+run  = 'shell "zed ." --orphan'
+desc = "使用 Zed 打开当前目录工程"

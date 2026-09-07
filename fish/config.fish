@@ -4,6 +4,7 @@ set -gx TERM xterm-256color
 
 #Homebrew
 eval (/opt/homebrew/bin/brew shellenv)
+fish_add_path -a /usr/local/bin
 
 # theme
 set -g theme_color_scheme terminal-dark
@@ -90,6 +91,15 @@ function y
         builtin cd -- "$cwd"
     end
     command rm -f -- "$tmp"
+end
+
+# Zed 快捷打开函数
+function ze --description "Open current directory or specified file in Zed"
+    if test (count $argv) -eq 0
+        zed .
+    else
+        zed $argv
+    end
 end
 
 # Set language to English
