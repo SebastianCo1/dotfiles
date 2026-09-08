@@ -23,6 +23,9 @@
       "type": "registry"
     }
   },
+  "helix": {
+    "jump_label_accent": "#ff9e64"
+  },
   "terminal": {
     "shell": {
       "program": "/opt/homebrew/bin/fish" // 内置终端使用 fish shell
