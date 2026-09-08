@@ -107,3 +107,4 @@ set -gx LANG en_US.UTF-8
 set -gx LC_ALL en_US.UTF-8
 fnm env --use-on-cd --shell fish --log-level quiet | source
 zoxide init fish | source
+starship init fish | source
