@@ -9,8 +9,14 @@
   "cli_default_open_behavior": "new_window",
   "agent_servers": {
     "codex-acp": {
+      "favorite_config_option_values": {
+        "collaboration_mode": [
+          "default"
+        ]
+      },
       "default_config_options": {
-        "reasoning_effort": "medium"
+        "collaboration_mode": "default",
+        "reasoning_effort": "low"
       },
       "type": "registry"
     },
