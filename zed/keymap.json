@@ -135,7 +135,14 @@
       "ctrl-o": "workspace::Open", // Ctrl+O:打开文件对话框(覆盖 Vim 默认的「跳转历史后退」)
       "ctrl-s": "workspace::Save", // Ctrl+S:保存(覆盖 Vim 默认的「显示函数签名」)
       "ctrl-a": "editor::SelectAll", // Ctrl+A:全选(覆盖 Vim 默认的「数字加一」)
-      "ctrl-b": "workspace::ToggleLeftDock" // Ctrl+B:切换左侧面板显隐(覆盖 Vim 默认的「上翻页」)
+      "ctrl-b": "workspace::ToggleLeftDock", // Ctrl+B:切换左侧面板显隐(覆盖 Vim 默认的「上翻页」)
+      "ctrl-alt-=": "vim::ResetPaneSizes", // 恢复等宽
+      "ctrl-alt-,": "vim::ResizePaneLeft", // 当前窗格变窄(可长按)
+      "ctrl-alt-.": "vim::ResizePaneRight", // 当前窗格变宽(可长按)
+      "ctrl-alt-[": "vim::ResizePaneDown", // 当前窗格变矮(可长按)
+      "ctrl-alt-]": "vim::ResizePaneUp", // 当前窗格变高(可长按)
+      "ctrl-alt-\\": "vim::ResetPaneSizes", // 所有窗格恢复等分
+      "ctrl-alt-m": "workspace::ToggleZoom" // 最大化当前窗格(单向)
     }
   },
   // ── 跳转历史:后退 / 前进 ────────────────────────────────

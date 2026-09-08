@@ -73,8 +73,7 @@
     "dock": "right", // AI 助手面板 停靠在右侧
     "always_allow_tool_actions": true, // 允许 AI 直接执行工具操作,不每次弹窗确认
     "default_model": {
-      "speed": "standard",
-      "effort": "medium", // 推理投入程度:高
+      "effort": "low", // 推理投入程度:高
       "enable_thinking": true, // 开启「思考」过程
       "provider": "zed.dev", // 模型提供方
       "model": "claude-opus-5" // 默认模型
