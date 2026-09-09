@@ -131,7 +131,7 @@
       "ctrl-x": "editor::Cut", // Ctrl+X:剪切(覆盖 Vim 默认的「数字减一」)
       "ctrl-v": "editor::Paste", // Ctrl+V:粘贴(覆盖 Vim 默认的「块可视模式」)
       "ctrl-y": "editor::Undo", // Ctrl+Y:撤销 ⚠️ 注意是「撤销」不是「重做」(覆盖 Vim 默认的「向上滚一行」)
-      "ctrl-f": "buffer_search::Deploy", // Ctrl+F:在当前文件内搜索(覆盖 Vim 默认的「下翻页」)
+      "ctrl-f": "vim::Search", // Ctrl+F:在当前文件内搜索(覆盖 Vim 默认的「下翻页」)
       "ctrl-o": "workspace::Open", // Ctrl+O:打开文件对话框(覆盖 Vim 默认的「跳转历史后退」)
       "ctrl-s": "workspace::Save", // Ctrl+S:保存(覆盖 Vim 默认的「显示函数签名」)
       "ctrl-a": "editor::SelectAll", // Ctrl+A:全选(覆盖 Vim 默认的「数字加一」)
