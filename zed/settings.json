@@ -8,6 +8,12 @@
 {
   "cli_default_open_behavior": "new_window",
   "agent_servers": {
+    "pi-acp": {
+      "default_config_options": {
+        "model": "openai-codex/gpt-6-astra"
+      },
+      "type": "registry"
+    },
     "codex-acp": {
       "favorite_config_option_values": {
         "collaboration_mode": [
@@ -15,8 +21,9 @@
         ]
       },
       "default_config_options": {
-        "collaboration_mode": "default",
-        "reasoning_effort": "low"
+        "model": "gpt-6-astra",
+        "collaboration_mode": "plan",
+        "reasoning_effort": "medium"
       },
       "type": "registry"
     },
@@ -53,6 +60,7 @@
     "tree_view": true // Git 改动以「树状目录」展示,而非平铺列表
   },
   "edit_predictions": {
+    "provider": "zed",
     "mode": "eager" // AI 行内补全:eager = 主动积极地给出预测(相对 subtle)
   },
   "context_servers": {
@@ -79,10 +87,10 @@
     "dock": "right", // AI 助手面板 停靠在右侧
     "always_allow_tool_actions": true, // 允许 AI 直接执行工具操作,不每次弹窗确认
     "default_model": {
-      "effort": "low", // 推理投入程度:高
+      "effort": "medium", // 推理投入程度:高
       "enable_thinking": true, // 开启「思考」过程
       "provider": "zed.dev", // 模型提供方
-      "model": "claude-opus-5" // 默认模型
+      "model": "claude-opus-5-5" // 默认模型
     },
     "default_profile": "ask", // 默认使用 ask(问答)配置文件
     "model_parameters": []
@@ -107,7 +115,7 @@
   ],
   "buffer_font_family": "JetBrains Mono", // 编辑区字体
   "file_types": {},
-  "show_edit_predictions": true, // 显示 AI 行内补全建议
+  "show_edit_predictions": false, // 显示 AI 行内补全建议
   "tab_size": 2, // 缩进 = 2 个空格
   "ui_font_size": 16, // 界面字号
   "buffer_font_size": 13.0, // 编辑区字号
@@ -177,6 +185,21 @@
     }
   },
   "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always"
+          }
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always"
+          }
+        }
+      },
+      "enable_lsp_tasks": true
+    },
     "eslint": {
       "settings": {
         "codeActionOnSave": {

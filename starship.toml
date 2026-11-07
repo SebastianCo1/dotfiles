@@ -1,3 +1,7 @@
-command_timeout = 1500
+# 扫描目录超时时间（单位：毫秒，默认是 30，建议改成 200 到 1000）
+scan_timeout = 500
+
+# （可选）执行外部命令的超时时间（默认是 500，如 git 检查较慢也可适当调大）
+command_timeout = 1000
 [ruby]
 disabled = true

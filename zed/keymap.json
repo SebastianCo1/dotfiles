@@ -70,8 +70,10 @@
       "shift-l": [
         "workspace::SendKeystrokes",
         "$"
-      ], // 普通模式:跳到行尾;可视模式:选区扩展到行尾
-      "cmd-k cmd-i": "editor::Hover"
+      ],
+      // Diagnostic 导航
+      "] d": "editor::GoToDiagnostic",
+      "[ d": "editor::GoToPreviousDiagnostic"
     }
   },
   // ── 空窗格 / 共享屏幕时的映射(当前为空)─────────────────
