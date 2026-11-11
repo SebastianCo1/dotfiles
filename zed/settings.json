@@ -150,8 +150,18 @@
     "source.fixAll.eslint": true // 格式化时自动执行 ESLint 的可修复项
   },
   "languages": {
+    "Go": {
+      "tab_size": 4,
+      "hard_tabs": false,
+      "language_servers": [
+        "gopls",
+        "golangci-lint"
+      ]
+    },
     // 以下四种语言单独再声明一遍「保存即格式化 + ESLint 自动修复」
     "JavaScript": {
+      "tab_size": 2,
+      "hard_tabs": false,
       "formatter": "language_server",
       "format_on_save": "on",
       "code_actions_on_format": {
@@ -163,6 +173,8 @@
       "formatter": "language_server"
     },
     "TypeScript": {
+      "tab_size": 2,
+      "hard_tabs": false,
       "formatter": "language_server",
       "format_on_save": "on",
       "code_actions_on_format": {
@@ -170,6 +182,8 @@
       }
     },
     "TSX": {
+      "tab_size": 2,
+      "hard_tabs": false,
       "formatter": "language_server",
       "format_on_save": "on",
       "code_actions_on_format": {
@@ -177,6 +191,8 @@
       }
     },
     "JSX": {
+      "tab_size": 2,
+      "hard_tabs": false,
       "formatter": "language_server",
       "format_on_save": "on",
       "code_actions_on_format": {
@@ -184,7 +200,27 @@
       }
     }
   },
+  "Vue": {
+    "tab_size": 2,
+    "hard_tabs": false
+  },
+  "Rust": {
+    "tab_size": 4,
+    "hard_tabs": false
+  },
   "lsp": {
+    "golangci-lint": {
+      "initialization_options": {
+        "command": [
+          "/opt/homebrew/bin/golangci-lint", // 这里使用 M1 Mac 上的绝对路径！
+          "run",
+          "--output.json.path",
+          "stdout",
+          "--show-stats=false",
+          "--output.text.path="
+        ]
+      }
+    },
     "vtsls": {
       "settings": {
         "typescript": {

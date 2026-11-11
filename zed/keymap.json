@@ -145,6 +145,14 @@
       "ctrl-alt-]": "vim::ResizePaneUp", // 当前窗格变高(可长按)
       "ctrl-alt-\\": "vim::ResetPaneSizes", // 所有窗格恢复等分
       "ctrl-alt-m": "workspace::ToggleZoom" // 最大化当前窗格(单向)
+      // | macOS 默认键位 | 动作 | 作用范围 |
+      // |---|---|---|
+      // | `ctrl-alt-=` | `workspace::IncreaseActiveDockSize` | 当前聚焦的那个 dock 变大 |
+      // | `ctrl-alt--` | `workspace::DecreaseActiveDockSize` | 变小 |
+      // | `ctrl-alt-0` | `workspace::ResetActiveDockSize` | 恢复默认尺寸 |
+      // | `ctrl-alt-+` | `workspace::IncreaseOpenDocksSize` | **所有**打开的 dock 一起变大 |
+      // | `ctrl-alt-_` | `workspace::DecreaseOpenDocksSize` | 一起变小 |
+      // | `ctrl-alt-)` | `workspace::ResetOpenDocksSize` | 一起恢复 |
     }
   },
   // ── 跳转历史:后退 / 前进 ────────────────────────────────
