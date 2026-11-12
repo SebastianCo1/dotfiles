@@ -16,7 +16,7 @@
   },
   // ── 插入模式下用 jk 退回普通模式 ──────────────────────────
   {
-    "context": "Editor && vim_mode == insert",
+    "context": "vim_mode == insert",
     "bindings": {
       "j k": "vim::NormalBefore" // 插入模式连按 j 再按 k:退回普通模式(光标停在原位,相当于 Esc)
     }
