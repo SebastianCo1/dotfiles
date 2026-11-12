@@ -6,6 +6,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "auto_indent": "syntax_aware",
   "cli_default_open_behavior": "new_window",
   "agent_servers": {
     "pi-acp": {
@@ -152,21 +153,43 @@
   "languages": {
     "Go": {
       "tab_size": 4,
-      "hard_tabs": false,
+      "auto_indent": "syntax_aware",
+      "format_on_save": "on",
+      "formatter": "language_server",
       "language_servers": [
         "gopls",
         "golangci-lint"
-      ]
+      ],
+      "hard_tabs": true,
+      "code_actions_on_format": {
+        "source.organizeImports": true,
+      },
+      "debuggers": [
+        "Delve"
+      ],
+    },
+    "JSON": {
+      "prettier": {
+        "allowed": true,
+      },
+    },
+    "JSONC": {
+      "prettier": {
+        "allowed": true,
+      },
     },
     // 以下四种语言单独再声明一遍「保存即格式化 + ESLint 自动修复」
     "JavaScript": {
       "tab_size": 2,
-      "hard_tabs": false,
+      "hard_tabs": true,
       "formatter": "language_server",
       "format_on_save": "on",
       "code_actions_on_format": {
         "source.fixAll.eslint": true
-      }
+      },
+      "prettier": {
+        "allowed": true,
+      },
     },
     "Prisma": {
       "format_on_save": "on",
@@ -174,39 +197,94 @@
     },
     "TypeScript": {
       "tab_size": 2,
-      "hard_tabs": false,
+      "hard_tabs": true,
       "formatter": "language_server",
       "format_on_save": "on",
       "code_actions_on_format": {
         "source.fixAll.eslint": true
-      }
+      },
+      "prettier": {
+        "allowed": true,
+      },
     },
     "TSX": {
       "tab_size": 2,
-      "hard_tabs": false,
+      "hard_tabs": true,
       "formatter": "language_server",
       "format_on_save": "on",
       "code_actions_on_format": {
         "source.fixAll.eslint": true
-      }
+      },
+      "prettier": {
+        "allowed": true,
+      },
     },
     "JSX": {
       "tab_size": 2,
-      "hard_tabs": false,
+      "hard_tabs": true,
       "formatter": "language_server",
       "format_on_save": "on",
       "code_actions_on_format": {
         "source.fixAll.eslint": true
-      }
-    }
-  },
-  "Vue": {
-    "tab_size": 2,
-    "hard_tabs": false
-  },
-  "Rust": {
-    "tab_size": 4,
-    "hard_tabs": false
+      },
+      "prettier": {
+        "allowed": true,
+      },
+    },
+    "Vue.js": {
+      "tab_size": 2,
+      "hard_tabs": true,
+      "prettier": {
+        "allowed": true,
+      },
+    },
+    "Rust": {
+      "tab_size": 4,
+      "hard_tabs": true,
+      "format_on_save": "on",
+      "debuggers": [
+        "CodeLLDB"
+      ],
+    },
+    "SCSS": {
+      "prettier": {
+        "allowed": true,
+      },
+    },
+    "Markdown": {
+      "use_on_type_format": false,
+      "remove_trailing_whitespace_on_save": false,
+      "allow_rewrap": "anywhere",
+      "soft_wrap": "editor_width",
+      "completions": {
+        "words": "disabled",
+      },
+      "prettier": {
+        "allowed": true,
+      },
+    },
+    "Python": {
+      "code_actions_on_format": {
+        "source.organizeImports.ruff": true,
+      },
+      "formatter": {
+        "language_server": {
+          "name": "ruff",
+        },
+      },
+      "debuggers": [
+        "Debugpy"
+      ],
+      "language_servers": [
+        "basedpyright",
+        "ruff",
+        "!ty",
+        "!pyrefly",
+        "!pyright",
+        "!pylsp",
+        "..."
+      ],
+    },
   },
   "lsp": {
     "golangci-lint": {
