@@ -1,4 +1,6 @@
 [[mgr.prepend_keymap]]
-on   = [ "g", "z" ]
-run  = 'shell "zed ." --orphan'
+on = ["g", "z"]
+run = 'shell "zed ." --orphan'
 desc = "使用 Zed 打开当前目录工程"
+
+# 输入; + open + <空格> + . 从当前目录进入finder
