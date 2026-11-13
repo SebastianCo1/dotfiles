@@ -125,6 +125,17 @@
       "shift-s": "vim::PushAddSurrounds" // shift+s: visual模式下加包裹
     }
   },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-/": [
+        "editor::ToggleComments",
+        {
+          "advance_downwards": true
+        }
+      ]
+    }
+  },
   // ── 覆盖常见的系统快捷键(Ctrl+C/V/X 等,牺牲部分 Vim 默认)─
   {
     "context": "Editor && !menu",
