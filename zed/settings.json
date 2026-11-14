@@ -160,7 +160,7 @@
         "gopls",
         "golangci-lint"
       ],
-      "hard_tabs": true,
+      "hard_tabs": false,
       "code_actions_on_format": {
         "source.organizeImports": true,
       },
